@@ -1,0 +1,45 @@
+* {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+	font-size: 
+}
+
+h5 {
+	font-size: 1.125em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+.hip-btn {
+	border: none;
+	border-radius: 10%;
+	font-weight: bold;
+	
+}
+
+article {
+	margin: 0 auto;
+}
+
+a:disabled, input:disabled, textarea:disabled, select:disabled, .hip-disabled {
+	background: #080808;
+	cursor: not-allowed;
+}
+
+a:hover, button:hover, .hip-clickable:hover {
+	cursor: pointer;
+}
