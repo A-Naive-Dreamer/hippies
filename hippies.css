@@ -1,45 +1,202 @@
 * {
-	font-size: 100%;
 	margin: 0;
 	padding: 0;
 }
 
+html {
+	font-size: 100%;
+}
+
 body {
+	background: #ffffff;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
+	line-height: 1.5;
+}
+
+kbd {
+	background: #000000;
+	border-radius: 10%;
+	color: #ffffff;
+	font-family: "Courier New", monospace;
+	font-weight: 700;
+	padding: 0 3px;
+}
+
+code {
+	background: #c0c0c0;
+	color: #ff0000;
+	font-family: "Courier New", monospace;
+	padding: 0 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 900;
+	padding: 0 16px;
 }
 
 h1 {
+	font-size: 2.5em;
 	text-align: center;
 }
 
+h2 {
+	font-size: 2.25em
+}
+
+h3 {
+	font-size: 2em;
+}
+
 h4 {
-	font-size: 
+	font-size: 1.75em;
 }
 
 h5 {
-	font-size: 1.125em;
+	font-size: 1.5em;
 }
 
 h6 {
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
-.hip-btn {
-	border: none;
-	border-radius: 10%;
-	font-weight: bold;
-	
+p {
+	padding: 0 16px;
+	text-indent: 16px;
+}
+
+blockquote {
+	border-left: 6px solid #c0c0c0;
+	margin: 0 16px;
+	padding: 0 16px;
+	text-indent: 16px;
+}
+
+blockquote>footer {
+	color: #808080;
+}
+
+blockquote>footer::before {
+	content: " - ";
 }
 
 article {
 	margin: 0 auto;
 }
 
-a:disabled, input:disabled, textarea:disabled, select:disabled, .hip-disabled {
-	background: #080808;
+textarea {
+	resize: none;
+}
+
+small {
+	color: #808080;
+	font-size: smaller;
+}
+
+mark {
+	background: #e0e000;
+	padding: 0 3px;
+}
+
+table {
+	display: block;
+	overflow: auto;
+}
+
+.hip-table {
+	border: none;
+}
+
+.hip-table>thead>tr>th {
+	text-align: center;
+}
+
+.hip-table>thead>tr>th,
+.hip-table>tbody>tr>td {
+	padding: 0 10px;
+}
+
+.hip-table-chess>thead>tr:nth-child(odd)>th:nth-child(odd) {
+	background: #202020;
+	color: #e0e0e0;
+}
+
+.hip-table-chess>thead>tr:nth-child(odd)>th:nth-child(even) {
+	background: #e0e0e0;
+	color: #202020;
+}
+
+.hip-table-chess>thead>tr:nth-child(even)>th:nth-child(odd) {
+	background: #e0e0e0;
+	color: #202020;
+}
+
+.hip-table-chess>thead>tr:nth-child(even)>th:nth-child(even) {
+	background: #202020;
+	color: #e0e0e0;
+}
+
+.hip-table-chess>tbody>tr:nth-child(odd)>td:nth-child(odd) {
+	background: #ffffff;
+	color: #000000;
+}
+
+.hip-table-chess>tbody>tr:nth-child(odd)>td:nth-child(even) {
+	background: #000000;
+	color: #ffffff;
+}
+
+.hip-table-chess>tbody>tr:nth-child(even)>td:nth-child(odd) {
+	background: #000000;
+	color: #ffffff;
+}
+
+.hip-table-chess>tbody>tr:nth-child(even)>td:nth-child(even) {
+	background: #ffffff;
+	color: #000000;
+}
+
+.hip-btn {
+	border: none;
+	border-radius: 10%;
+	font-weight: 700;
+}
+
+a[disabled],
+input[disabled],
+textarea[disabled],
+select[disabled],
+button[disabled] {
+	background: #c0c0c0;
+}
+
+abbr:hover {
+	cursor: help;
+}
+
+a[disabled]:hover,
+input[disabled]:hover,
+textarea[disabled]:hover,
+select[disabled]:hover,
+button[disabled]:hover {
 	cursor: not-allowed;
 }
 
-a:hover, button:hover, .hip-clickable:hover {
+input[readonly]:hover,
+textarea[readonly]:hover,
+select[readonly]:hover {
+	cursor: not-allowed;
+}
+
+a:hover,
+button:hover,
+.hip-clickable:hover {
 	cursor: pointer;
 }
